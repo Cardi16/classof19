@@ -1,33 +1,29 @@
-﻿# The script of the game goes in this file.
-
-# Declare characters used by this game. The color argument colorizes the
-# name of the character.
-
-define e = Character("Eileen")
+﻿define r = Character("Rinku")
+define rk = Character("Rika")
 
 
-# The game starts here.
+label splashscreen:
+    scene black with Pause(1)
+
+    show text "Warning: None of the characters in this game are intended to reference real-life figures or characters.\nViewer discretion is advised." with dissolve
+    with Pause(2)
+
+    hide text with dissolve
+    with Pause(1)
+
+    return
 
 label start:
+    scene room
+    show aimotorinku
+    
+    r "Wow, I sure do love being in the void."
+    r "Happy Around!"
+    hide aimotorinku
 
-    # Show a background. This uses a placeholder by default, but you can
-    # add a file (named either "bg room.png" or "bg room.jpg") to the
-    # images directory to show it.
-
-    scene bg room
-
-    # This shows a character sprite. A placeholder is used, but you can
-    # replace it by adding a file named "eileen happy.png" to the images
-    # directory.
-
-    show eileen happy
-
-    # These display lines of dialogue.
-
-    e "You've created a new Ren'Py game."
-
-    e "Once you add a story, pictures, and music, you can release it to the world!"
-
-    # This ends the game.
+    show setorika
+    rk "I love the void!!"
+    rk "Don't you want to have fun with Merm4id?\ngay ass mf"
+    hide rk
 
     return

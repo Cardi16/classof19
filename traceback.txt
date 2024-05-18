@@ -1,0 +1,34 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "renpy/common/00start.rpy", line 237, in script call
+    call _splashscreen from _call_splashscreen_1
+  File "game/script.rpy", line 7, in script
+    scene splash Pause(1)
+Exception: Image 'splash' does not accept attributes 'Pause (1)'.
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "renpy/common/00start.rpy", line 237, in script call
+    call _splashscreen from _call_splashscreen_1
+  File "game/script.rpy", line 7, in script
+    scene splash Pause(1)
+  File "C:\Users\69buf\OneDrive - UC San Diego\renpy games\renpy-8.1.3-sdk\renpy\ast.py", line 1562, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "C:\Users\69buf\OneDrive - UC San Diego\renpy games\renpy-8.1.3-sdk\renpy\ast.py", line 1391, in show_imspec
+    renpy.config.show(name,
+  File "C:\Users\69buf\OneDrive - UC San Diego\renpy games\renpy-8.1.3-sdk\renpy\exports.py", line 733, in show
+    if not base.find_target() and renpy.config.missing_show:
+  File "C:\Users\69buf\OneDrive - UC San Diego\renpy games\renpy-8.1.3-sdk\renpy\display\image.py", line 421, in find_target
+    self.target = target._duplicate(a)
+  File "C:\Users\69buf\OneDrive - UC San Diego\renpy games\renpy-8.1.3-sdk\renpy\display\core.py", line 499, in _duplicate
+    args.extraneous()
+  File "C:\Users\69buf\OneDrive - UC San Diego\renpy games\renpy-8.1.3-sdk\renpy\display\core.py", line 362, in extraneous
+    raise Exception("Image '{}' does not accept attributes '{}'.".format(
+Exception: Image 'splash' does not accept attributes 'Pause (1)'.
+
+Windows-10-10.0.19045 AMD64
+Ren'Py 8.1.3.23091805
+Class of 19 1.0
+Fri May 17 21:53:12 2024
